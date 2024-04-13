@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+    <!-- Inline Event -->
+    <div id="box" onclick="alert ('Event Model')"> box trial (Click) </div> <br>
+    <div id="Hover" onmouseover="alert('Hover!')" onclick="alert ('Event Model')" > box trial (Hover) </div> <br>
+    <!-- Add Event Listener -->
+    <div id="Event1"> box trial (Event1) </div>
+    <script>
+        const Event1Div = document.getElementById("Event1");
+
+        function event1Mouseover(e){
+            alert("Hi! Ambrose.");
+        }
+        Event1Div.addEventListener("click",event1Mouseover(0));
+    </script>
+    <br>
+
+    <div id="box" onclick="alert ('Event Model')"> box trial </div>
+    
+  
+    
+
+</body>
+    <!-- <script src="fetch.js"></script> -->
+    <script src="event.js"></script>
+</html>
